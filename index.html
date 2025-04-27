@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allwin Fernandis | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #d1c4e9;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      border: 5px solid #ffffff44;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      max-width: 900px;
+      width: 100%;
+      margin: 20px 0;
+      padding: 30px;
+      box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+      transition: 0.3s;
+    }
+    .glass-card:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffffff44;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+    ul li::before {
+      content: '✓ ';
+      color: #ffcc80;
+      font-weight: bold;
+    }
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .project-description {
+      color: #d1c4e9;
+    }
+    footer {
+      background: rgba(255,255,255,0.1);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #d1c4e9;
+      backdrop-filter: blur(5px);
+    }
+    a {
+      color: #ffcc80;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Contact Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-size: 1rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #d1c4e9;
+    }
+    button {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background-color: #ffcc80;
+      color: #333;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ffd699;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Allwin Fernandis</h1>
+  <p>Fast Learner | Inquisitive Mind | Adaptive Achiever</p>
+  <img src="your-photo.jpg" alt="Allwin Fernandis" class="profile-img">
+</header>
+
+<main>
+
+  <div class="glass-card">
+    <h2>About Me</h2>
+    <p>Hi! I'm Allwin Fernandis, an inquisitive and adaptive learner with a passion for exploring new ideas and turning challenges into opportunities. Always curious, always evolving, and always ready to take on the next adventure!</p>
+  </div>
+
+  <div class="glass-card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Fast Learning and Adaptation</li>
+      <li>Curiosity-driven Research and Exploration</li>
+      <li>Problem-Solving and Analytical Thinking</li>
+    </ul>
+  </div>
+
+  <div class="glass-card">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div class="project-title">Smart Study Companion (Web App)</div>
+      <p class="project-description">A responsive app helping students manage time, set goals, and boost productivity. Motivational quotes, daily trackers, and smart reminders were key features.</p>
+    </div>
+
+    <div class="project" style="margin-top: 20px;">
+      <div class="project-title">QuickShop E-commerce Demo</div>
+      <p class="project-description">A minimalist online shopping experience built for speed and simplicity. Clean UI with seamless cart management and smooth navigation.</p>
+    </div>
+
+  </div>
+
+  <div class="glass-card">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top: 20px;">Or reach me directly:</p>
+    <p>Email: <a href="mailto:allwinfernandis81@gmail.com">allwinfernandis81@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/fernandis_allwyn" target="_blank">@fernandis_allwyn</a></p>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 Allwin Fernandis | All Rights Reserved
+</footer>
+
+</body>
+</html>
